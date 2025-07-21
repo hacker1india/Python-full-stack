@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Shop - Home</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(90deg, #6c63ff, #6f99f2);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .nav-links a {
+            margin: 10px;
+        }
+        .info-text {
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="display-4 fw-bold">Welcome to My Shop 🛒</h1>
+        <p class="lead">Manage your items easily and efficiently</p>
+    </header>
+
+    <div class="container py-5">
+        <div class="text-center nav-links">
+            <a href="{% url 'add_item' %}" class="btn btn-primary btn-lg">Add Item</a>
+            <a href="{% url 'item_list' %}" class="btn btn-outline-secondary btn-lg">Read Items</a>
+        </div>
+
+        <div class="info-text text-center">
+            <p class="mt-4">To update or delete an item, click <strong>Read Items</strong> and use the action links provided for each item.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
